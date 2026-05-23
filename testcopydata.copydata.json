@@ -57,6 +57,8 @@
           "mappingType": "table_mapping"
         },
         "resourceGroup": {
+          "resourceGroupId": 1186,
+          "resourceGroupName": "dts_test_do_not_delete",
           "resourceType": "VCI"
         }
       }

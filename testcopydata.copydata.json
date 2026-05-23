@@ -1,0 +1,65 @@
+{
+  "configuration": {
+    "reader": {
+      "type": "hive",
+      "parameter": {
+        "dataSourceId": 69603,
+        "dataSourceName": "售卖区_hive_EMR数据源",
+        "tableName": "dts_qa_all",
+        "readerMode": "hdfs",
+        "multiplePartitionList": [
+          [
+            {
+              "name": "ds",
+              "type": "string",
+              "value": "20260523"
+            }
+          ]
+        ],
+        "columns": [
+          {
+            "type": "int",
+            "name": "id",
+            "extraType": null,
+            "description": ""
+          }
+        ],
+        "templateParam": {},
+        "connectorType": "hive"
+      }
+    },
+    "writer": {
+      "type": "pg",
+      "parameter": {
+        "dataSourceId": 69605,
+        "dataSourceName": "售卖区_postgresql数据源",
+        "tableSchema": "dts_unity_test",
+        "tableName": "unify_test_part",
+        "postSqls": "",
+        "preSqls": "",
+        "writeMode": "directlyInsert",
+        "columns": [
+          {
+            "type": "serial",
+            "name": "id",
+            "extraType": null,
+            "description": null
+          }
+        ],
+        "connectorType": "pg"
+      }
+    },
+    "operator": {
+      "parameter": {
+        "expectedMaxParallelism": 1,
+        "customParameters": {},
+        "extendedParameters": {
+          "mappingType": "table_mapping"
+        },
+        "resourceGroup": {
+          "resourceType": "VCI"
+        }
+      }
+    }
+  }
+}

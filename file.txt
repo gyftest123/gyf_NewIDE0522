@@ -1,0 +1,8 @@
+{
+  "name": "Perl测试脚本",
+  "version": 1.0,
+  "is_valid": true,
+  "author": "开发者",
+  "create_time": "2025-12-22",
+  "description": null
+}

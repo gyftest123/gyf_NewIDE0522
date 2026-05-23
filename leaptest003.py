@@ -6,7 +6,7 @@ def get_user_list():
 
     try:
         res = requests.get(url, timeout=5)
-        assert res.status_code == 200, "查询用户失败"
+        assert res.status_code == 200, "查询用户失败哈哈哈哈哈哈哈哈"
         users = res.json()
         print("=== 查询到用户数量：", len(users))
         print("第一个用户名称：", users[0]["name"])

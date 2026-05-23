@@ -4,5 +4,6 @@
   "is_valid": true,
   "author": "开发者",
   "create_time": "2025-12-22",
-  "description": null
+  "description": null,
+  "testuser": "guoyafei"
 }
